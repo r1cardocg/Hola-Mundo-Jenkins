@@ -5,7 +5,7 @@ app.use(cors({
     "origin": "*"
 }));
 const port = 3000;
-app.get(/api/v1/welcome, (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hola Mundos de Jenkins');
 });
 app.listen(port, () => {
